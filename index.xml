@@ -50,12 +50,12 @@ Alerts This is a primary alert—check it out!  This is a secondary alert—chec
     </item>
     
     <item>
-      <title>About Malika</title>
+      <title>I&#39;m Malika</title>
       <link>/about/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>我是张小雅，英文名字Malika，一个编程小白。这里将会记录我的学术成果及日常生活，谢谢。</description>
+      <description>我是张小雅，一个编程小白。这里将会记录我的学术成果及日常生活 </description>
     </item>
     
     <item>
