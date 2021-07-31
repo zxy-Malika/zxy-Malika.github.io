@@ -59,5 +59,19 @@ Alerts This is a primary alert—check it out!  This is a secondary alert—chec
 In modus congue feugait eos.</description>
     </item>
     
+    <item>
+      <title>Bayesian Linear Regression</title>
+      <link>/blog/bayes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/bayes/</guid>
+      <description>Bayesian linear regressionGiven a dataset \(D = \{(x_i,y_i),i=1,...,n\},x_i\in R^p,y_i\in R\)The target variable y is given by a multiple linear model:\(y=X\beta+\epsilon\)
+with \(p(\epsilon)=N(0,\sigma_e^2)\) Bayesian theory is \(p(\beta|D)=\frac {p(D|\beta)p(\beta)}{p(D)}\)Known quntitypreconditionWe assume that information on correlation structure \(\begin{Bmatrix}x_j\end{Bmatrix}\) is available
+Use the least square estimate to get the estimated information about \(\beta\)
+\(\hat \beta_j=(X^T_jX_j)^{-1}X_j^Ty\)
+\(\hat \sigma_j^2=(nX^T_jX_j)^{-1}(y-X_j\hat \beta_j)^T(y-X_j\hat \beta_j)\)
+\(S_j^2=\hat \sigma_j^2+n^{-1}\hat \beta_j^2\), \(j\in\lbrace1,.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Bayesian Linear Regression -  </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/blog/bayes/" />
+    <meta property="og:title" content="Bayesian Linear Regression" />
+    <meta property="og:image" content="/" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:title" content="Bayesian Linear Regression" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="/" />
+
+    <link rel="canonical" href="/blog/bayes/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/css/custom.css" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github-gist.min.css" integrity="sha512-od7JLoOTxM8w/HSKGzP9Kexc20K9p/M2zxSWsd7H1e4Ctf+8SQFtCWEZnW5u6ul5ehSECa5QmOk9ju2nQMmlVA==" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="/images/favicon.png">
+
+    
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="" />
+    
+</head>
+
+<body>
+    
+<div class="mt-xl header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="/">
+                    <h1 class="name">Malika&#39;website</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <ul class="nav nav-primary">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        
+                        Home
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/about/">
+                        
+                        About
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/zxy-Malika">
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://weibo.com/u/5654562152">
+                        
+                        Weibo
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.xml">
+                        
+                        Subscribe
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-8">
+                <h1 class="mx-0 mx-md-4 blog-post-title">Bayesian Linear Regression</h1>
+
+                <div class="mb-md-4 meta">
+                    
+                    
+                    <span class="author" title="Malika">
+                        Malika
+                    </span>
+                    
+                    
+
+                    <span class="date middot" title='Mon Jan 1 0001 00:00:00 UTC'>
+                        0001-01-01
+                    </span>
+
+                    <span class="reading-time middot">
+                        1 min read
+                    </span>
+
+                    <div class="d-none d-md-inline tags">
+                        <ul class="list-unstyled d-inline">
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="markdown blog-post-content">
+                    
+    
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="bayesian-linear-regression" class="section level1">
+<h1>Bayesian linear regression</h1>
+<ul>
+<li>Given a dataset <span class="math inline">\(D = \{(x_i,y_i),i=1,...,n\},x_i\in R^p,y_i\in R\)</span></li>
+<li>The target variable y is given by a multiple linear model:
+<span class="math inline">\(y=X\beta+\epsilon\)</span><br />
+</li>
+<li>with <span class="math inline">\(p(\epsilon)=N(0,\sigma_e^2)\)</span> </li>
+<li>Bayesian theory is <span class="math inline">\(p(\beta|D)=\frac {p(D|\beta)p(\beta)}{p(D)}\)</span></li>
+</ul>
+</div>
+<div id="known-quntity" class="section level1">
+<h1>Known quntity</h1>
+<div id="precondition" class="section level2">
+<h2>precondition</h2>
+<ol style="list-style-type: decimal">
+<li>We assume that information on correlation structure <span class="math inline">\(\begin{Bmatrix}x_j\end{Bmatrix}\)</span> is available<br />
+</li>
+<li>Use the least square estimate to get the estimated information about <span class="math inline">\(\beta\)</span><br />
+<span class="math inline">\(\hat \beta_j=(X^T_jX_j)^{-1}X_j^Ty\)</span><br />
+<span class="math inline">\(\hat \sigma_j^2=(nX^T_jX_j)^{-1}(y-X_j\hat \beta_j)^T(y-X_j\hat \beta_j)\)</span><br />
+<span class="math inline">\(S_j^2=\hat \sigma_j^2+n^{-1}\hat \beta_j^2\)</span>, 
+<span class="math inline">\(j\in\lbrace1,...p\rbrace\)</span><br />
+</li>
+<li>With this place, the likelihood we propose for <span class="math inline">\(\beta\)</span> is:<br />
+<span class="math inline">\(L_{rss}(\beta;\hat \beta,\hat S,\hat R)=N(\hat \beta;\hat S\hat R\hat S^{-1}\beta,\hat S\hat R\hat S)\)</span><br />
+</li>
+<li>Specifically, we have <span class="math inline">\(\hat \beta\sim N(\hat S\hat R\hat S^{-1}\beta,\hat S\hat R\hat S)\)</span><br />
+</li>
+</ol>
+</div>
+<div id="hypothesis" class="section level2">
+<h2>hypothesis</h2>
+<p>Suppose the <span class="math inline">\(\beta\)</span> prior distribution is: <span class="math inline">\(\beta\sim N(\mu,\Sigma)\)</span><br />
+</p>
+</div>
+</div>
+<div id="the-process" class="section level1">
+<h1>The process</h1>
+<ul>
+<li>Our goal:<br />
+Combine the priors using Bayesian to inference posteriors for <span class="math inline">\(\beta\)</span><br />
+</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>To:<span class="math inline">\(\hat S\hat R\hat S^{-1}=A,\ \hat S\hat R\hat S=B\)</span><br />
+therefore<span class="math inline">\(\hat \beta\sim N(A\beta,B)\)</span><br />
+</li>
+<li>We know :<span class="math inline">\(p(\hat \beta|\beta)=\frac {1}{\sqrt{2\pi|B|}}exp\lbrace-\frac {1}{2}(\hat\beta-A\hat\beta)^TB^{-1}(\hat\beta-A\hat\beta) \rbrace\)</span><br />
+<span class="math inline">\(p(\beta)=\frac {1}{\sqrt{2\pi|\Sigma|}}exp\lbrace-\frac {1}{2}(\beta-\mu)^T\Sigma^{-1}(\beta-\mu) \rbrace\)</span><br />
+3.<span class="math inline">\(p(\beta|\hat\beta)=\frac {p(\hat\beta|\beta)p(\beta)}{\int p(\hat\beta|\beta)p(\beta)}\)</span>, we know <span class="math inline">\(\int p(\hat\beta|\beta)p(\beta)=C_1\)</span><br />
+C is constant term<br />
+</li>
+<li><span class="math inline">\(p(\beta|\hat\beta)=C_2exp\lbrace-\frac {1}{2}[\sum_{j=1}^n(\hat\beta-A\hat\beta)^TB^{-1}(\hat\beta-A\hat\beta)+(\beta-\mu)^T\Sigma^{-1}(\beta-\mu)]\rbrace\)</span><br />
+</li>
+</ol>
+</div>
+<div id="result" class="section level1">
+<h1>Result</h1>
+<p>We assume <span class="math inline">\(p(\beta|\hat\beta)\sim N(\mu_0,\Sigma_0)\)</span><br />
+Then we can conclude from 4:<br />
+<span class="math inline">\(\begin{cases}\mu_0=\frac{N\Sigma\overline {\hat\beta_j}}{A^T(N\Sigma+B)A}+\frac{B}{A^T(N\Sigma+B)A}\mu\\\Sigma_0=\frac{B\Sigma}{A^T(N\Sigma+B)A}\end{cases}\)</span><br />
+</p>
+</div>
+
+
+
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="comments">
+    <div class="py-3 content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <div class="comments">
+                        <script src="https://utteranc.es/client.js" repo=""
+                            issue-term="pathname" label="comment" theme="github-light" crossorigin="anonymous" async>
+                            </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/stan.min.js" defer></script>
+        
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+        
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+</body>
+
+</html>

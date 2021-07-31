@@ -50,13 +50,12 @@ Alerts This is a primary alert—check it out!  This is a secondary alert—chec
     </item>
     
     <item>
-      <title>About Hugo Tanka</title>
+      <title>About Malika</title>
       <link>/about/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Lorem ipsum dolor sit amet, ex has sale ullum corrumpit, sea dicam nostrum sensibus ad. Porro tritani persecuti te sed. Omittam dissentias pro ex. Atqui luptatum duo id. Eros minim eam ex, novum elitr accusam quo in. Nec ne audire euripidis, mea qualisque consetetur cu. Suspendisse volutpat sem a risus euismod convallis.
-In modus congue feugait eos. In nec nonumy volutpat corrumpit, sea assentior quaerendum no, cum affert scripta ea. No nihil voluptaria pro.</description>
+      <description>我是张小雅，英文名字Malika，一个编程小白。这里将会记录我的学术成果及日常生活，谢谢。</description>
     </item>
     
     <item>
@@ -67,6 +66,20 @@ In modus congue feugait eos. In nec nonumy volutpat corrumpit, sea assentior qua
       <guid>/blog/long-title/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 In modus congue feugait eos.</description>
+    </item>
+    
+    <item>
+      <title>Bayesian Linear Regression</title>
+      <link>/blog/bayes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/bayes/</guid>
+      <description>Bayesian linear regressionGiven a dataset \(D = \{(x_i,y_i),i=1,...,n\},x_i\in R^p,y_i\in R\)The target variable y is given by a multiple linear model:\(y=X\beta+\epsilon\)
+with \(p(\epsilon)=N(0,\sigma_e^2)\) Bayesian theory is \(p(\beta|D)=\frac {p(D|\beta)p(\beta)}{p(D)}\)Known quntitypreconditionWe assume that information on correlation structure \(\begin{Bmatrix}x_j\end{Bmatrix}\) is available
+Use the least square estimate to get the estimated information about \(\beta\)
+\(\hat \beta_j=(X^T_jX_j)^{-1}X_j^Ty\)
+\(\hat \sigma_j^2=(nX^T_jX_j)^{-1}(y-X_j\hat \beta_j)^T(y-X_j\hat \beta_j)\)
+\(S_j^2=\hat \sigma_j^2+n^{-1}\hat \beta_j^2\), \(j\in\lbrace1,.</description>
     </item>
     
   </channel>
