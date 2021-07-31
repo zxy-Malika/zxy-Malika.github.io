@@ -6,7 +6,34 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Dec 2020 21:13:14 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2020奥运会——乒乓球</title>
+      <link>/news/pingpang/</link>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/news/pingpang/</guid>
+      <description>这是一个搞笑的故事当奥恰洛夫输球这个瘫软倒地就很真实，毕竟和马龙连战19次全输，这是离胜利最近的一次了
+当伊藤输球你想多了，不是球拍的问题，就是你菜
+当香港队被淘汰来自祖国妈妈的凝视
+当水谷隼见到张继科是我见到偶像的样子~
+</description>
+    </item>
+    
+    <item>
+      <title>Bayesian Linear Regression</title>
+      <link>/blog/bayes/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/bayes/</guid>
+      <description>Bayesian linear regressionGiven a dataset \(D = \{(x_i,y_i),i=1,...,n\},x_i\in R^p,y_i\in R\)The target variable y is given by a multiple linear model:\(y=X\beta+\epsilon\)
+with \(p(\epsilon)=N(0,\sigma_e^2)\) Bayesian theory is \(p(\beta|D)=\frac {p(D|\beta)p(\beta)}{p(D)}\)Known quntitypreconditionWe assume that information on correlation structure \(\begin{Bmatrix}x_j\end{Bmatrix}\) is available
+Use the least square estimate to get the estimated information about \(\beta\)
+\(\hat \beta_j=(X^T_jX_j)^{-1}X_j^Ty\)
+\(\hat \sigma_j^2=(nX^T_jX_j)^{-1}(y-X_j\hat \beta_j)^T(y-X_j\hat \beta_j)\)
+\(S_j^2=\hat \sigma_j^2+n^{-1}\hat \beta_j^2\), \(j\in\lbrace1,.</description>
+    </item>
+    
     <item>
       <title>Hello R Markdown</title>
       <link>/blog/2020-12-01-r-rmarkdown/</link>
@@ -56,20 +83,6 @@ Alerts This is a primary alert—check it out!  This is a secondary alert—chec
       
       <guid>/about/</guid>
       <description>我是张小雅，一个编程小白。这里将会记录我的学术成果及日常生活~ </description>
-    </item>
-    
-    <item>
-      <title>Bayesian Linear Regression</title>
-      <link>/blog/bayes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/bayes/</guid>
-      <description>Bayesian linear regressionGiven a dataset \(D = \{(x_i,y_i),i=1,...,n\},x_i\in R^p,y_i\in R\)The target variable y is given by a multiple linear model:\(y=X\beta+\epsilon\)
-with \(p(\epsilon)=N(0,\sigma_e^2)\) Bayesian theory is \(p(\beta|D)=\frac {p(D|\beta)p(\beta)}{p(D)}\)Known quntitypreconditionWe assume that information on correlation structure \(\begin{Bmatrix}x_j\end{Bmatrix}\) is available
-Use the least square estimate to get the estimated information about \(\beta\)
-\(\hat \beta_j=(X^T_jX_j)^{-1}X_j^Ty\)
-\(\hat \sigma_j^2=(nX^T_jX_j)^{-1}(y-X_j\hat \beta_j)^T(y-X_j\hat \beta_j)\)
-\(S_j^2=\hat \sigma_j^2+n^{-1}\hat \beta_j^2\), \(j\in\lbrace1,.</description>
     </item>
     
   </channel>

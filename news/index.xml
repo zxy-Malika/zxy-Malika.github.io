@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on </title>
+    <link>/news/</link>
+    <description>Recent content in News on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 31 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2020奥运会——乒乓球</title>
+      <link>/news/pingpang/</link>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/news/pingpang/</guid>
+      <description>这是一个搞笑的故事当奥恰洛夫输球这个瘫软倒地就很真实，毕竟和马龙连战19次全输，这是离胜利最近的一次了
+当伊藤输球你想多了，不是球拍的问题，就是你菜
+当香港队被淘汰来自祖国妈妈的凝视
+当水谷隼见到张继科是我见到偶像的样子~
+</description>
+    </item>
+    
+  </channel>
+</rss>
